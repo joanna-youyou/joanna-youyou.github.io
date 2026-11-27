@@ -162,6 +162,20 @@
   .steps b { font-family: var(--serif); font-size: 19px; display: block; line-height: 38px; }
   .steps span { color: var(--muted); font-size: 15.5px; }
 
+  /* ---------- 費用 ---------- */
+  .price-card { background: var(--dark); color: #F3EAE0; border-radius: 22px; padding: 26px 26px 22px; margin-top: 28px; max-width: 560px; }
+  .price-top { display: flex; justify-content: space-between; font-weight: 700; font-size: 15px; }
+  .price-top span:first-child { color: var(--gold-soft); letter-spacing: .1em; }
+  .price-num { font-family: var(--serif); font-weight: 900; font-size: clamp(52px, 14vw, 76px); line-height: 1.1; margin-top: 10px; }
+  .price-num small { font-size: 22px; font-weight: 700; margin-right: 8px; }
+  .price-per { border-top: 1px solid #5A4C44; margin-top: 12px; padding-top: 12px; color: var(--gold-soft); font-weight: 700; }
+  .parts h3 { font-size: 17px; color: var(--gold); margin: 30px 0 12px; }
+  .parts ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .parts li { background: var(--paper); border: 1px solid var(--rule); border-radius: 12px; padding: 12px 16px; font-weight: 500; }
+  .parts ul.body li { background: var(--blush); border-color: var(--blush); }
+  @media (min-width: 720px) { .parts ul { grid-template-columns: repeat(4, 1fr); } }
+  .price-note { margin-top: 20px; font-size: 14px; color: var(--muted); }
+
   /* ---------- 關於 ---------- */
   .about { background: var(--paper); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
   .about-body { max-width: 36em; display: grid; gap: 16px; margin-top: 8px; }
@@ -396,6 +410,31 @@
     </div>
   </section>
 
+  <!-- 費用：依 2026-11-27 價目表「幼態課程」 -->
+  <section style="padding-top:0" id="price">
+    <div class="wrap">
+      <p class="eyebrow">費用</p>
+      <h2>先把價錢攤開來講。</h2>
+      <div class="price-card">
+        <div class="price-top"><span>局部體驗</span><span>5,000 發</span></div>
+        <p class="price-num"><small>NT$</small>5,000</p>
+        <p class="price-per">體驗價，每發 NT$1</p>
+      </div>
+      <div class="parts">
+        <h3>臉部局部調整</h3>
+        <ul>
+          <li>法令紋</li><li>眉壓眼</li><li>大小臉</li><li>嘴邊肉</li>
+          <li>鬆弛</li><li>凹陷</li><li>輪廓線</li><li>雙下巴</li>
+        </ul>
+        <h3>身體局部規劃</h3>
+        <ul class="body">
+          <li>手臂</li><li>大腿</li><li>肚子</li><li>側腰線</li>
+        </ul>
+      </div>
+      <p class="price-note">以局部調整為主。發數怎麼分配，要看妳的狀況和嚴重程度，現場看過再跟妳討論。</p>
+    </div>
+  </section>
+
   <!-- 關於游游 -->
   <section class="about">
     <div class="wrap">
@@ -448,7 +487,7 @@
         </details>
         <details>
           <summary>費用怎麼算？</summary>
-          <p>會依妳的臉型狀況和要做的部位不同。諮詢時我會把費用講清楚，妳聽完再決定。</p>
+          <p>局部體驗是 NT$5,000，共 5,000 發，等於每發 NT$1。臉部、身體都能用，發數怎麼分配，看過妳的狀況再一起決定。</p>
         </details>
         <details>
           <summary>地點在哪裡？</summary>
