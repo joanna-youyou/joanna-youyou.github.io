@@ -187,6 +187,11 @@
   /* ---------- 反饋 ---------- */
   .proof { text-align: center; }
   .proof .lead { margin: 0 auto 26px; }
+  /* 案例圖：手機左右滑，桌機一排看得到三張多 */
+  .cases { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 20px 18px; margin: 0 -20px 22px; text-align: left; -webkit-overflow-scrolling: touch; }
+  .cases figure { flex: 0 0 78%; max-width: 320px; margin: 0; scroll-snap-align: center; }
+  .cases img { width: 100%; height: auto; aspect-ratio: 4 / 5; border-radius: 14px; box-shadow: 0 8px 22px rgba(60,40,20,.12); background: var(--blush); }
+  .cases-hint { font-size: 13px; color: var(--muted); margin: -10px 0 22px; }
 
   /* ---------- FAQ ---------- */
   .faq { margin-top: 26px; border-top: 1px solid var(--rule); }
@@ -455,7 +460,15 @@
     <div class="wrap">
       <p class="eyebrow">真實反饋</p>
       <h2>我說再多，不如妳自己看。</h2>
-      <p class="lead">做過的人的臉部、身體反饋，我都放在 Instagram 的精選動態裡。</p>
+      <p class="lead">幾位客人的之前與之後。每個人狀況不同，變化因人而異。</p>
+      <!-- 案例圖：來源 ads\case-*-4x5.png；要拿掉哪一張，刪掉那一個 figure 就好 -->
+      <div class="cases" role="list">
+        <figure role="listitem" data-case="lower-face"><img src="images/cases/case-lower-face.jpg" width="1080" height="1350" loading="lazy" alt="嘴邊與下巴的之前與之後"></figure>
+        <figure role="listitem" data-case="arm"><img src="images/cases/case-arm.jpg" width="1080" height="1350" loading="lazy" alt="手臂後側的之前與之後"></figure>
+        <figure role="listitem" data-case="thigh"><img src="images/cases/case-thigh.jpg" width="1080" height="1350" loading="lazy" alt="大腿線條的之前與之後"></figure>
+        <figure role="listitem" data-case="waist"><img src="images/cases/case-waist.jpg" width="1080" height="1350" loading="lazy" alt="側腰的之前與之後"></figure>
+      </div>
+      <p class="cases-hint">往右滑看更多 →　更多反饋在 Instagram 精選動態。</p>
       <a class="btn btn-ghost" href="https://www.instagram.com/yy860830/" target="_blank" rel="noopener">到 Instagram 看「輪廓線反饋」</a>
     </div>
   </section>
