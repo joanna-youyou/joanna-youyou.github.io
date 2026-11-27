@@ -225,7 +225,10 @@
   .looks-grid img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 18px; scroll-snap-align: center; background: var(--rule); }
   .looks-note { margin-top: 10px; font-size: 12.5px; color: var(--muted); }
   @media (min-width: 720px) {
-    .looks-grid { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(3, 1fr); margin: 30px 0 0; padding: 0; overflow: visible; }
+    .looks-grid { grid-auto-flow: row; grid-auto-columns: auto; grid-template-columns: repeat(2, 1fr); margin: 30px 0 0; padding: 0; overflow: visible; }
+  }
+  @media (min-width: 960px) {
+    .looks-grid { grid-template-columns: repeat(4, 1fr); }
   }
 
   /* ---------- IG 主題 ---------- */
@@ -520,8 +523,6 @@
         <img src="images/stock/home-smile.jpg" width="900" height="900" loading="lazy" style="object-position:50% 18%" alt="微笑著用雙手輕觸臉頰的女生">
         <img src="images/stock/home-mirror-mask.jpg" width="900" height="900" loading="lazy" style="object-position:50% 36%" alt="拿著面膜照鏡子的女生">
         <img src="images/stock/home-sofa-mask.jpg" width="900" height="900" loading="lazy" style="object-position:50% 42%" alt="坐在沙發上敷臉的女生">
-        <img src="images/stock/home-device-closeup.jpg" width="900" height="900" loading="lazy" style="object-position:55% 50%" alt="美容儀器靠近臉部的特寫">
-        <img src="images/stock/home-mirror-device.jpg" width="900" height="900" loading="lazy" style="object-position:50% 50%" alt="在鏡子前使用美容小工具的女生">
       </div>
       <p class="looks-note">示意照片，取自圖庫。照片中的人不是游游，也不是客人。</p>
     </div>
